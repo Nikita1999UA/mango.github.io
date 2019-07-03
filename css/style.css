@@ -123,6 +123,19 @@ body {
   list-style: none;
   padding-left: 35px;
   padding-right: 35px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  cursor: pointer;
+}
+
+.main .main__menu--hamburger ul svg {
+  -webkit-transition: 850ms;
+  transition: 850ms;
+}
+
+.main .main__menu--hamburger ul svg:hover {
+  height: 300px;
 }
 
 .main .main__menu--hamburger ul .main__menu_top {
@@ -141,6 +154,15 @@ body {
   font-weight: 700;
   font-size: 30px;
   text-transform: uppercase;
+}
+
+.main .main__menu--hamburger li:hover .main__menu_link--bold {
+  color: #C86DFF;
+}
+
+.main .main__menu--hamburger li:hover line {
+  stroke: #C86DFF;
+  height: 120%;
 }
 
 .main .main__footer__address--column {
