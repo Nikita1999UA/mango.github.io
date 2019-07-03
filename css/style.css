@@ -3,6 +3,10 @@
   margin: 0;
 }
 
+body {
+  font-family: 'Rubik';
+}
+
 .main {
   height: 100vh;
   background-color: blue;
@@ -12,6 +16,20 @@
 .main .container {
   max-width: 90%;
   margin: 0 auto;
+}
+
+.main .wrapper {
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .main .main__header {
@@ -68,6 +86,107 @@
 .main .main__menu ul li a {
   text-decoration: none;
   color: #fff;
+  font-weight: 300;
+}
+
+.main .main__menu--hamburger {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main .main__menu--hamburger ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main .main__menu--hamburger ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  list-style: none;
+  padding-left: 35px;
+  padding-right: 35px;
+}
+
+.main .main__menu--hamburger ul .main__menu_top {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: #000;
+  margin-bottom: 15px;
+}
+
+.main .main__menu--hamburger ul a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 700;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
+.main .main__footer__address--column {
+  max-width: 280px !important;
+  width: 100% !important;
+  color: #7B7B7B;
+  text-decoration: none;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 150%;
+}
+
+.main .main__contact--column {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 180px !important;
+  width: 100% !important;
+}
+
+.main .main__contact--column a {
+  color: #7B7B7B;
+  text-decoration: none;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 150%;
+}
+
+.main .main__social--small {
+  max-width: 250px;
+}
+
+.main .main__social--small a {
+  padding: 10px;
+}
+
+.main .main__social--small a i {
+  color: #7B7B7B;
+}
+
+.main .main__copy {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 21px;
+  color: #7B7B7B;
 }
 
 .main .main__logo {
@@ -78,7 +197,15 @@
 }
 
 .main .main__content {
-  margin-top: 20%;
+  margin-top: 12%;
+}
+
+.main .main__content_title {
+  font-weight: 700;
+}
+
+.main .main__content_desr {
+  font-weight: 300;
 }
 
 .main .main__footer {
@@ -95,6 +222,15 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.main .main__footer--gray {
+  background: #0B0B0B;
+  width: 100%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 25%;
 }
 
 .main .main__social_link {
@@ -121,11 +257,13 @@
 .main .main__contact_phone {
   color: #ffffff;
   text-decoration: none;
+  font-weight: 300;
 }
 
 .main .main__contact_mail {
   color: #ffffff;
   text-decoration: none;
+  font-weight: 300;
 }
 
 .main .main__language {
@@ -142,6 +280,7 @@
 .main .main__language a {
   text-transform: uppercase;
   text-decoration: none;
-  color: #000;
+  color: #fff;
+  font-weight: 300;
 }
 /*# sourceMappingURL=style.css.map */
