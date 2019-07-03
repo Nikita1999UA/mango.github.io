@@ -134,10 +134,6 @@ body {
   transition: 850ms;
 }
 
-.main .main__menu--hamburger ul svg:hover {
-  height: 300px;
-}
-
 .main .main__menu--hamburger ul .main__menu_top {
   font-style: normal;
   font-weight: 300;
@@ -158,6 +154,10 @@ body {
 
 .main .main__menu--hamburger li:hover .main__menu_link--bold {
   color: #C86DFF;
+}
+
+.main .main__menu--hamburger li:hover svg {
+  height: 300px;
 }
 
 .main .main__menu--hamburger li:hover line {
