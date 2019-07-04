@@ -9,6 +9,7 @@
 // 	});
 // });
 
+new WOW().init();
 
 const humbergerMenuLink = document.querySelector(".main__link");
 const humbergerMenuLinkTwo = document.querySelector(".main__link--one");
