@@ -4,9 +4,13 @@
 
 body
     font-family: 'Rubik'
+    position: relative
+    overflow-x: hidden
 .main
     height: 100vh
     background-color: blue
+    transform: translateY(0)
+    transition: 1450ms
     color: #fff
     .container
         max-width: 90%
@@ -29,7 +33,14 @@ body
         text-decoration: none
         font-weight: bold
         .main__link_image
-            margin-right: 15px
+            margin-right: 5px
+    .main__link:hover
+        color: #C0C0C0
+        svg
+            path 
+                fill: #C0C0C0
+
+    
     .main__menu
         height: 80px
         display: flex
@@ -61,7 +72,7 @@ body
                 justify-content: flex-end
                 cursor: pointer
             svg
-                transition: 850ms   
+                transition: 1050ms   
             .main__menu_top
                 font-style: normal
                 font-weight: 300
@@ -171,3 +182,12 @@ body
             text-decoration: none
             color: #fff
             font-weight: 300
+
+.main--menu
+    position: absolute
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    transform: translateY(-100%)
+    transition: 1150ms

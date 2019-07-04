@@ -5,11 +5,17 @@
 
 body {
   font-family: 'Rubik';
+  position: relative;
+  overflow-x: hidden;
 }
 
 .main {
   height: 100vh;
   background-color: blue;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  -webkit-transition: 1450ms;
+  transition: 1450ms;
   color: #fff;
 }
 
@@ -58,7 +64,15 @@ body {
 }
 
 .main .main__link .main__link_image {
-  margin-right: 15px;
+  margin-right: 5px;
+}
+
+.main .main__link:hover {
+  color: #C0C0C0;
+}
+
+.main .main__link:hover svg path {
+  fill: #C0C0C0;
 }
 
 .main .main__menu {
@@ -130,8 +144,8 @@ body {
 }
 
 .main .main__menu--hamburger ul svg {
-  -webkit-transition: 850ms;
-  transition: 850ms;
+  -webkit-transition: 1050ms;
+  transition: 1050ms;
 }
 
 .main .main__menu--hamburger ul .main__menu_top {
@@ -304,5 +318,17 @@ body {
   text-decoration: none;
   color: #fff;
   font-weight: 300;
+}
+
+.main--menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+  -webkit-transition: 1150ms;
+  transition: 1150ms;
 }
 /*# sourceMappingURL=style.css.map */
