@@ -11,7 +11,7 @@ body {
 
 .main {
   height: 100vh;
-  background-image: url("../img/bg.png");
+  background: blue;
   -webkit-transform: translateY(0);
           transform: translateY(0);
   -webkit-transition: 1450ms;
